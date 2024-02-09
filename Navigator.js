@@ -9,15 +9,12 @@ import Notifications from './Screens/BottomTabScreens/Notifications'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 
 import { Ionicons, FontAwesome } from '@expo/vector-icons';
-import { styled } from 'nativewind'
 
 const Navigator = () => {
     const Tab = createBottomTabNavigator()
 
     return (
-        <NavigationContainer
-
-        >
+        < >
             <Tab.Navigator
                 screenOptions={({ route: { name } }) => {
                     return ({
@@ -43,17 +40,24 @@ const Navigator = () => {
 
                             return < Ionicons name={icon} size={20} color={focused ? "#0D34BF" : "black"} />
                         },
-                        tabBarStyle: {
-                            elevation: 4,
-                            // height: 0,
-                            paddingVertical: 4
-                        },
                         tabBarLabelStyle: {
                             color: "black",
                             textTransform: 'capitalize',
-                            marginBottom: 4
+                            paddingTop: 4
                         },
-
+                        tabBarHideOnKeyboard: true,
+                        headerShown: false,
+                        tabBarStyle: {
+                            position: "absolute",
+                            bottom: 0,
+                            right: 0,
+                            left: 0,
+                            elevation: 0,
+                            height: 40,
+                            backgroundColor: 'rgba(76, 83, 110, 0.02)',
+                            borderTopWidth: 0,
+                            paddingBottom: 4
+                        }
 
 
                     })
@@ -94,7 +98,7 @@ const Navigator = () => {
                     name='settings'
                 />
             </Tab.Navigator>
-        </NavigationContainer>
+        </>
     )
 }
 
