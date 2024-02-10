@@ -1,16 +1,17 @@
-import React from 'react';
-import { View, Text, SafeAreaView } from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, SafeAreaView, TextInput, ScrollView } from 'react-native';
 import { Ionicons } from '@expo/vector-icons'
+import Find from '../../Components/Home/Find';
+import Carousel from '../../Components/Home/Carousel';
 
 const Home = () => {
     return (
-        <SafeAreaView className="flex-1 h-screen  bg-blue-800" >
-            <View className="h-9 w-screen flex flex-row justify-around items-center" >
-                <Ionicons name="menu" size={24} color="#4C536E" />
-            </View>
+        <SafeAreaView  >
+            <ScrollView className=" " >
+                <Find />
+                <Carousel />
+            </ScrollView>
         </SafeAreaView>
     );
 }
-
-
 export default Home;
