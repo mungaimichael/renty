@@ -1,10 +1,11 @@
-import { View, Text, Button, FlatList } from 'react-native'
+import { View, Text, Button, FlatList, ScrollView } from 'react-native'
 import React from 'react'
-import useDataFetch from '../../Hooks/UseDataFetch'
+import useDataFetch from '../../Hooks/useDataFetch'
+import SelectedItem from './SelectedItem'
 
 const Carousel = () => {
 
-    const { houses, loading } = useDataFetch("https://estateapi.onrender.com/api/products/")
+    const { data, loading } = useDataFetch('https://realty-in-us.p.rapidapi.com/properties/v3/list')
 
     if (loading) {
         return (
@@ -17,19 +18,29 @@ const Carousel = () => {
     }
     return (
         <View>
+            <Text
+                className="font-bold text-xl ml-3 py-2 font-primary  "
+            >
+                New Listings
+            </Text>
+            <ScrollView
+                horizontal
+                showsHorizontalScrollIndicator={false}
+                className="flex flex-row  ml-4"
+            >
 
-            {
-                houses &&
-                houses.map(({ _id, image, title, price }) => (
-                    <div key={_id}>
-                        <img src={image} alt={title} />
-                        <h2>{title}</h2>
-                        <p>Price: ${price}</p>
-                    </div>
-                ))
+                {
+                    data &&
+                    data.map((item, index) => (
+                        <SelectedItem
+                            key={index}
+                            item={item}
+                        />
+                    ))
 
-            }
+                }
 
+            </ScrollView>
         </View>
     )
 }
