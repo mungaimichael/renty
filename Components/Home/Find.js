@@ -9,6 +9,7 @@ const Find = () => {
             <View className="w-[80%] flex flex-row justify-between items-center mx-auto mt-4 " >
 
                 <Ionicons
+                    color={"#4C536E"}
                     name='menu'
                     size={24} />
 

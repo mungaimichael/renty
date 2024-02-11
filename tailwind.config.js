@@ -11,6 +11,9 @@ module.exports = {
       textColor: {
         primary: "#0D34BF",
         secondary: "#4C536E"
+      },
+      fontFamily: {
+        primary: 'bold'
       }
     },
   },
