@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { View, Text, SafeAreaView, TextInput, ScrollView } from 'react-native';
-import { Ionicons } from '@expo/vector-icons'
 import Find from '../../Components/Home/Find';
 import Carousel from '../../Components/Home/Carousel';
 
