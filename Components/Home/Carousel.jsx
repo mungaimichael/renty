@@ -19,7 +19,8 @@ const Carousel = () => {
     return (
         <View>
             <Text
-                className="font-bold text-xl ml-3 py-2 font-primary  "
+                // style={{ fontFamily: 'bold' }}
+                className="  text-xl ml-3 py-2 font-primary  "
             >
                 New Listings
             </Text>
