@@ -12,7 +12,7 @@ import Favorites from './Favorites'
 
 import { Ionicons, FontAwesome } from '@expo/vector-icons';
 
-const index = () => {
+const BottomTabScreen = () => {
 
     const Tab = createBottomTabNavigator()
 
@@ -105,4 +105,4 @@ const index = () => {
     )
 }
 
-export default index
+export default BottomTabScreen

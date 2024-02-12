@@ -13,7 +13,9 @@ module.exports = {
         secondary: "#4C536E"
       },
       fontFamily: {
-        primary: 'bold'
+        primary: 'light',
+        regular: "regular",
+        secondary: 'bold'
       }
     },
   },
