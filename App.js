@@ -3,7 +3,6 @@ import 'react-native-gesture-handler';
 
 import { StatusBar, View } from 'react-native';
 import Navigator from './Navigator';
-import { NavigationContainer } from '@react-navigation/native';
 import { useFonts } from 'expo-font';
 
 import * as SplashScreen from "expo-splash-screen"
@@ -16,8 +15,8 @@ export default function App() {
 
   const [fontsLoaded, fontError] = useFonts({
     'bold': require('./assets/fonts/Quicksand-Bold.ttf'),
-    'light': require('./assets/fonts/Quicksand-Light.ttf'),
     'regular': require('./assets/fonts/Quicksand-Regular.ttf'),
+    'light': require('./assets/fonts/Quicksand-Light.ttf'),
   });
 
   const onLayoutRootView = useCallback(async () => {
@@ -33,9 +32,7 @@ export default function App() {
   return (
     <View className="flex flex-1 "  >
       <StatusBar barStyle={"dark-content"} />
-      <NavigationContainer>
-        <Navigator />
-      </NavigationContainer>
+      <Navigator />
     </View>
   );
 }

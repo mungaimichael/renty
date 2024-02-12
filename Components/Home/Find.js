@@ -15,14 +15,16 @@ const Find = () => {
 
                 <View className="flex flex-row items-end" >
                     <Ionicons name='location-outline' size={24} />
-                    <Text>Nairobi</Text>
+                    <Text
+                        className="font-regular"
+                    >Nairobi</Text>
                 </View>
 
             </View>
             <View className='w-[80%] mt-2 mx-auto '>
-                <Text className="text-3xl font-bold mt-2  ">
+                <Text className="text-3xl font-regular mt-2  ">
                     Looking For The Perfect</Text>
-                <Text className="text-3xl font-bold mt-2 text-[#4C536E]">Place ? </Text>
+                <Text className="text-3xl font-secondary mt-2 text-[#4C536E]">Place ? </Text>
 
             </View>
 
