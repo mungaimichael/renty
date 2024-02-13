@@ -51,6 +51,7 @@ const CarouselItem = ({ item }) => {
     const navigation = useNavigation()
     const {
         property_id,
+        list_price,
         status,
         location: {
             address: {
@@ -75,18 +76,13 @@ const CarouselItem = ({ item }) => {
     return (
         <Pressable
             className="mx-2"
-            onPress={() => navigation.navigate('Selected Unit', { item })}
+            onPress={() => navigation.navigate('Selected Unit', { city, country, street_view_url, beds, baths, href, sqft, id: property_id, list_price })}
 
         >
             <View
                 className="h-[250] w-[200] border-0 shadow-xl rounded-2xl bg-slate-300/20 flex  "
             >
-                {/* <Text>{property_id}</Text>
-                <Text>{type}</Text>
 
-                <Text>{status}</Text>
-                <Text>{city}, {country}</Text>
-                <Text>{beds}, {baths}, {sqft}</Text> */}
                 <Image
                     source={{ uri: href }}
                     className=" w-full  mx-auto rounded-lg  aspect-square  "
