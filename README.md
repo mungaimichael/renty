@@ -25,6 +25,7 @@ Please Note that the low quality images are due to the API and not an app bug
 
  
 </div>
+
 Tech Stack Used 🛠️
 
 Expo: A powerful toolchain and platform for building, deploying, and iterating on React Native apps with ease.
@@ -38,16 +39,20 @@ Native Wind: A utility-first CSS framework for React Native, providing a robust 
 **Getting Started**
 
 Prerequisites
+
 Visual Studio Code
+
 Android SDK
+
 Expo Client
+
 Rapid API Key
 
 Installation
 
 Clone the repo
 
-git clone https://github.com/lynnemunini/travel-hub.git
+git clone https://github.com/mungaimichael/renty.git
 Open the project in Visual Studio Code
 Download dependecies and run npm expo start or yarn start
 
