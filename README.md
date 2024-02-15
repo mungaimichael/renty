@@ -18,6 +18,7 @@ Please Note that the low quality images are due to the API and not an app bug
   style={display:'flex', flex-direction:'row'}
  >
 <img src="./images/1.png" alt="Home" title="Optional title" height="550">
+ 
 <img src="./images/2.png" alt="Home" title="Optional title" height="550">
 <img src="./images/3.png" alt="Home" title="Optional title" height="550">
 <img src="./images/4.png" alt="Home" title="Optional title" height="550">
