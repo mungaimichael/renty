@@ -14,7 +14,15 @@ More features to be added on future iterations of the app
 
 Please Note that the low quality images are due to the API and not an app bug
 
+<div
+  style={display:'flex', flex-direction:'row'}
+ >
+<img src="./images/1.png" alt="Home" title="Optional title" height="550">
+<img src="./images/2.png" alt="Home" title="Optional title" height="550">
+<img src="./images/3.png" alt="Home" title="Optional title" height="550">
+<img src="./images/4.png" alt="Home" title="Optional title" height="550">
 
-<img src="https://github.com/mungaimichael/renty/assets/83639621/eb916424-c89e-4b4b-9892-e185065877a3" alt="Home" title="Optional title" height="700">
-<!-- <img src="./images/1.png" alt="Home" title="Optional title" height="700"> -->
+ 
+</div>
+
 
