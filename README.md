@@ -1,4 +1,6 @@
-RENTY APP
+RENTY APP 📱
+
+
 Welcome to our Real Estate App! This React Native app, built using Expo and Native Wind, helps you explore available properties with ease. Here's a brief overview of its features:
 
 Explore Units: Browse through a variety of properties for sale.
